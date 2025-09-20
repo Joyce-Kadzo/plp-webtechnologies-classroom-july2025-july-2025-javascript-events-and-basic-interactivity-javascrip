@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Interactive Page</h1>
+        <button id="toggleTheme">Toggle Light/Dark Mode</button>
+    </header>
+
+    <section>
+        <h2>Counter Game</h2>
+        <p>Click the button to increase your score:</p>
+        <button id="incrementBtn">Click Me!</button>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+
+    <section>
+        <h2>FAQ Section</h2>
+        <div class="faq">
+            <button class="faq-question">What is JavaScript?</button>
+            <p class="faq-answer">JavaScript is a programming language used for web interactivity.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-question">Why validate forms?</button>
+            <p class="faq-answer">Form validation ensures the data entered is correct and complete.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            <small class="error-msg"></small>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <small class="error-msg"></small>
+
+            <label>Password:</label>
+            <input type="password" id="password" required>
+            <small class="error-msg"></small>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
